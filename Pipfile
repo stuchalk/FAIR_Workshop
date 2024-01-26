@@ -4,14 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
-requests = "*"
-crossrefapi = "*"
-pubchempy = "*"
-scidatalib = "*"
+django = ">=4.2.0,<5.0"
+requests = ">=2.31.0"
+crossrefapi = ">=1.6.0"
+pubchempy = ">=1.0.0"
+scidatalib = ">=0.3.0"
+numpy = ">=1.26.0"
+# version of urllib required by crossrefapi
+urllib3 = "==1.26.16"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
-python_full_version = "3.10.10"
+python_version = "3.11"
